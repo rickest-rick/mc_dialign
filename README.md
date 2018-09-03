@@ -1,4 +1,4 @@
-# mc_dialign
+# MC DIALIGN
 A multiple sequence alignment tool using implementations of Morgenstern et all.'s DIALIGN and Pitschi et all.'s min cut approach.
 
 DIALIGN uses space efficient dynamic programming to compute optimal pairwise alignments. A greedy heuristic chooses the fragment with the highest weight which is consistent with all fragments chosen so far. To ensure this consistency we use an alignment graph (https://www.ncbi.nlm.nih.gov/pubmed/10222408).
