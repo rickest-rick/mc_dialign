@@ -6,3 +6,5 @@ DIALIGN uses space efficient dynamic programming to compute optimal pairwise ali
 The min cut approach also starts with the pairwise alignments. We construct an incidence graph on these alignments and use a min cut algorithm to remove ambiguities. Subsequently, we build a succession graph to ensure consistency (https://academic.oup.com/bioinformatics/article/26/8/1015/206628).
 
 We will start implementing DIALIGN. Afterwards, we will proceed with the min cut algorithm using the Boost Graph Library. At first, MC DIALIGN will be able to read and write FASTA files using Bioio (https://github.com/dancooke/bioio). More file formats might follow.
+
+For further details take a look at my bachelor thesis ("BachelorThesis.pdf" - in German) or the references I cited there.
