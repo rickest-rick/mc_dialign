@@ -13,20 +13,17 @@ endif()
 
 set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/site.cpp
-        ${CMAKE_SOURCE_DIR}/succession_node.cpp
-        ${CMAKE_SOURCE_DIR}/succession_graph_seq.cpp
-        )
+        ${CMAKE_SOURCE_DIR}/main.cpp)
 
 find_package(Boost)
 if (NOT ${Boost_FOUND})
     message(STATUS "Boost not found. Using own...")
-    set(BOOST_ROOT "${CMAKE_SOURCE_DIR}/boost-graph")
+    set(BOOST_ROOT "${CMAKE_SOURCE_DIR}/../boost-graph")
 endif()
 
-add_executable(longest_path ${CMAKE_SOURCE_DIR}/main.cpp ${TARGET_SRC})
-target_include_directories(longest_path PUBLIC ${BOOST_ROOT} ${CMAKE_SOURCE_DIR})
+add_executable(mc_dialign ${CMAKE_SOURCE_DIR}/main.cpp ${TARGET_SRC})
 
-#Catch interface verschoeben in die untere Cmake
+#moved catch interface to different cmake
 
 # test targets
 if(BUILD_TESTS)

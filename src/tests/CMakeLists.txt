@@ -1,18 +1,13 @@
 add_library(Catch INTERFACE)
 target_include_directories(Catch INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 
-# current fÃ¼r die dateien die hier sind und
-# osnt ohne current
+#current for files here, else don't use current
 set(TEST_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/site_test.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/succession_node_test.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/succession_graph_seq_test.cpp
         )
 
 set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/site.cpp
-        ${CMAKE_SOURCE_DIR}/succession_node.cpp
-        ${CMAKE_SOURCE_DIR}/succession_graph_seq.cpp
         )
 
 foreach(TEST_FILE ${TEST_FILES})
