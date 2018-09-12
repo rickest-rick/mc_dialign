@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.0)
-project(longest_path)
+project(MC_DIALIGN)
 
 option(BUILD_TESTS "Run tests using CATCH framework" ON)
 
@@ -13,7 +13,7 @@ endif()
 
 set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/site.cpp
-        ${CMAKE_SOURCE_DIR}/main.cpp)
+        ${CMAKE_SOURCE_DIR}/main.cpp fragment.h)
 
 find_package(Boost)
 if (NOT ${Boost_FOUND})

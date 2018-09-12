@@ -4,8 +4,8 @@
 
 //==================================
 // include guard
-#ifndef SRC_SITE_H
-#define SRC_SITE_H
+#ifndef MC_DIALIGN_SITE_H
+#define MC_DIALIGN_SITE_H
 
 //==================================
 // forward class references
@@ -22,8 +22,8 @@
  */
 class Site{
 private:
-    unsigned int sequence; // the sequence this site belongs to
-    unsigned int position; // the position of this site in its sequence
+    unsigned int sequence_; // the sequence this site belongs to
+    unsigned int position_; // the position of this site in its sequence
 
 public:
     /**
@@ -35,12 +35,12 @@ public:
     /**
      * @return the site's sequence
      */
-    unsigned int getSequence() const;
+    unsigned int Sequence() const;
 
     /**
      * @return the site's position inside its sequence
      */
-    unsigned int getPosition() const;
+    unsigned int Position() const;
 
     /**
      * Operator to compare two sites for equality. Checks if sequence and position are the same.
@@ -63,4 +63,4 @@ public:
      bool operator <=(const Site& rhs) const;
 };
 
-#endif //SRC_SITE_H
+#endif //MC_DIALIGN_SITE_H

@@ -5,22 +5,22 @@
 #include "site.h"
 
 Site::Site(unsigned int seq, unsigned int pos)
-        :sequence(seq),
-         position(pos)
+        :sequence_(seq),
+         position_(pos)
         {}
 
-unsigned int Site::getSequence() const{
-    return sequence;
+unsigned int Site::Sequence() const{
+    return sequence_;
 }
-unsigned int Site::getPosition() const{
-    return position;
+unsigned int Site::Position() const{
+    return position_;
 }
 
 bool Site::operator==(const Site& rhs) const{
-    return (sequence == rhs.getSequence()) && (position == rhs.getPosition());
+    return (sequence_ == rhs.Sequence()) && (position_ == rhs.Position());
 }
 
 bool Site::operator<=(const Site& rhs) const{
-    return (sequence == rhs.getSequence()) && (position <= rhs.getPosition());
+    return (sequence_ == rhs.Sequence()) && (position_ <= rhs.Position());
 }
 
