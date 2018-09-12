@@ -13,7 +13,7 @@ endif()
 
 set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/site.cpp
-        ${CMAKE_SOURCE_DIR}/main.cpp fragment.h)
+        ${CMAKE_SOURCE_DIR}/main.cpp)
 
 find_package(Boost)
 if (NOT ${Boost_FOUND})
