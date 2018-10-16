@@ -8,3 +8,5 @@ The min cut approach also starts with the pairwise alignments. We construct an i
 We will start implementing DIALIGN. Afterwards, we will proceed with the min cut algorithm using the Boost Graph Library. At first, MC DIALIGN will be able to read and write FASTA files using Bioio (https://github.com/dancooke/bioio). More file formats might follow.
 
 For further details take a look at my bachelor thesis ("BachelorThesis.pdf" - in German) or the references I cited there.
+
+![UML-Klassendiagramm von DIALIGN](https://github.com/rickest-rick/mc_dialign/blob/master/MC_DIALIGN.png)
