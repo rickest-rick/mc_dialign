@@ -13,7 +13,22 @@ endif()
 
 set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/site.cpp
-        ${CMAKE_SOURCE_DIR}/main.cpp)
+        ${CMAKE_SOURCE_DIR}/main.cpp
+        ${CMAKE_SOURCE_DIR}/reader.cpp
+        ${CMAKE_SOURCE_DIR}/writer.cpp
+        ${CMAKE_SOURCE_DIR}/fasta_writer.cpp
+        ${CMAKE_SOURCE_DIR}/fasta_reader.cpp
+        ${CMAKE_SOURCE_DIR}/alignment.cpp
+        ${CMAKE_SOURCE_DIR}/alignment_graph.cpp
+        ${CMAKE_SOURCE_DIR}/sitespace.cpp
+        ${CMAKE_SOURCE_DIR}/pairwise_alignment_matrix.cpp
+        ${CMAKE_SOURCE_DIR}/fragment.cpp
+        ${CMAKE_SOURCE_DIR}/dialign.cpp
+        ${CMAKE_SOURCE_DIR}/mc_dialign.cpp
+        ${CMAKE_SOURCE_DIR}/incidence_graph.cpp
+        ${CMAKE_SOURCE_DIR}/succession_graph.cpp
+        ${CMAKE_SOURCE_DIR}/succession_vertex.cpp
+        )
 
 find_package(Boost)
 if (NOT ${Boost_FOUND})
