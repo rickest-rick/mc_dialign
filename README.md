@@ -18,7 +18,22 @@ For further details take a look at my bachelor thesis ("BachelorThesis.pdf" - in
 
 |Class      |Header File    |Source File|Comments|
 |-----------|---------------|-----------|--------|
-|Alignment  |               |           |        |
-|Dialign    ||||
+|Alignment               ||||
+|Dialign                 ||||
+|McDialign               ||||
+|Writer                  ||||
+|FastaWriter             ||||
+|Reader                  ||||
+|FastaReader             ||||
+|PairwiseAlignmentMatrix ||||
+|Alignmentgraph          ||||
+|Sitespace               ||||
+|Fragment                |x|x||
+|IncidenceGraph          ||||
+|SuccessionGraph         |||The algorithm to detect a longest path in a DAG was implemented in "succession_graph_sec.cpp" as part of my bachelor thesis.|
+|Site                    |x|x||
+|SuccessionVertex        |x|x||
+
+
 
 
