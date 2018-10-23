@@ -27,6 +27,7 @@ set (TARGET_SRC
         ${CMAKE_SOURCE_DIR}/mc_dialign.cpp
         ${CMAKE_SOURCE_DIR}/incidence_graph.cpp
         ${CMAKE_SOURCE_DIR}/succession_graph.cpp
+        ${CMAKE_SOURCE_DIR}/succession_graph_sec.cpp
         ${CMAKE_SOURCE_DIR}/succession_vertex.cpp
         )
 
