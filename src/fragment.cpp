@@ -22,31 +22,31 @@ Fragment::Fragment(unsigned int sequence_one_, unsigned int sequence_two_, unsig
                                                                                           length_(length_),
                                                                                           weight_(weight_) {}
 
-unsigned int Fragment::getSequence_one_() const {
+unsigned int Fragment::sequence_one() const {
     return sequence_one_;
 }
 
-unsigned int Fragment::getSequence_two_() const {
+unsigned int Fragment::sequence_two() const {
     return sequence_two_;
 }
 
-unsigned int Fragment::getStart_point_one_() const {
+unsigned int Fragment::start_point_one() const {
     return start_point_one_;
 }
 
-unsigned int Fragment::getStart_point_two_() const {
+unsigned int Fragment::start_point_two() const {
     return start_point_two_;
 }
 
-unsigned int Fragment::getLength_() const {
+unsigned int Fragment::length() const {
     return length_;
 }
 
-double Fragment::getWeight_() const {
+double Fragment::weight() const {
     return weight_;
 }
 
-void Fragment::setWeight_(double weight_) {
+void Fragment::set_weight(double weight_) {
     Fragment::weight_ = weight_;
 }
 

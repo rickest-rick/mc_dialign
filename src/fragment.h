@@ -37,19 +37,19 @@ private:
     unsigned double weight_;
 
 public:
-    unsigned int getSequence_one_() const;
+    unsigned int sequence_one() const;
 
-    unsigned int getSequence_two_() const;
+    unsigned int sequence_two() const;
 
-    unsigned int getStart_point_one_() const;
+    unsigned int start_point_one() const;
 
-    unsigned int getStart_point_two_() const;
+    unsigned int start_point_two() const;
 
-    unsigned int getLength_() const;
+    unsigned int length() const;
 
-    double getWeight_() const;
+    double weight() const;
 
-    void setWeight_(double weight_);
+    void set_weight(double weight_);
 
     Fragment(unsigned int sequence_one_, unsigned int sequence_two_, unsigned int start_point_one_,
              unsigned int start_point_two_, unsigned int length_);

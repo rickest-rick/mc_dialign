@@ -9,31 +9,32 @@ Site::Site(unsigned int seq, unsigned int pos)
          position_(pos)
         {}
 
-unsigned int Site::Sequence() const{
+unsigned int Site::sequence() const{
     return sequence_;
 }
-unsigned int Site::Position() const{
+
+unsigned int Site::position() const{
     return position_;
 }
 
 bool Site::operator==(const Site& rhs) const{
-    return (sequence_ == rhs.Sequence()) && (position_ == rhs.Position());
+    return *this <= rhs && *this >= rhs;
 }
 
 bool Site::operator<=(const Site& rhs) const {
-    return (sequence_ == rhs.Sequence()) && (position_ <= rhs.Position());
+    return (sequence_ == rhs.sequence()) && (position_ <= rhs.position());
 }
 
 bool Site::operator>=(const Site& rhs) const {
-    return (sequence_ == rhs.Sequence()) && (position_ >= rhs.Position());
+    return (sequence_ == rhs.sequence()) && (position_ >= rhs.position());
 }
 
 bool Site::operator<(const Site &rhs) const {
-    return (sequence_ == rhs.Sequence()) && (position_ < rhs.Position());
+    return (sequence_ == rhs.sequence()) && (position_ < rhs.position());
 }
 
 bool Site::operator>(const Site &rhs) const {
-    return (sequence_ == rhs.Sequence()) && (position_ > rhs.Position());
+    return (sequence_ == rhs.sequence()) && (position_ > rhs.position());
 }
 
 

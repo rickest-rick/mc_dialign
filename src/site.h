@@ -35,12 +35,12 @@ public:
     /**
      * @return the site's sequence
      */
-    unsigned int Sequence() const;
+    unsigned int sequence() const;
 
     /**
      * @return the site's position inside its sequence
      */
-    unsigned int Position() const;
+    unsigned int position() const;
 
     /**
      * Operator to compare two sites for equality. Checks if sequence and position are the same.
