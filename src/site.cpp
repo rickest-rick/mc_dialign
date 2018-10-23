@@ -20,7 +20,20 @@ bool Site::operator==(const Site& rhs) const{
     return (sequence_ == rhs.Sequence()) && (position_ == rhs.Position());
 }
 
-bool Site::operator<=(const Site& rhs) const{
+bool Site::operator<=(const Site& rhs) const {
     return (sequence_ == rhs.Sequence()) && (position_ <= rhs.Position());
 }
+
+bool Site::operator>=(const Site& rhs) const {
+    return (sequence_ == rhs.Sequence()) && (position_ >= rhs.Position());
+}
+
+bool Site::operator<(const Site &rhs) const {
+    return (sequence_ == rhs.Sequence()) && (position_ < rhs.Position());
+}
+
+bool Site::operator>(const Site &rhs) const {
+    return (sequence_ == rhs.Sequence()) && (position_ > rhs.Position());
+}
+
 

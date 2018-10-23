@@ -58,9 +58,46 @@ public:
      * different sequences or rhs has a smaller pos, this function returns false.
      *
      * @param rhs the site this one is compared to
+     * @return if this site is smaller than or equal to rhs based on the partial order on the set of sites
+     */
+     bool operator<=(const Site& rhs) const;
+
+    /**
+     * @brief Operator to decide if the current site is larger than or equal to the one it is compared to.
+     *
+     * This comparison is based on the partial order of the set of sites. This method returns true if and only if both
+     * sites belong to the same sequence and the current site's pos is larger or equal than rhs's. If they are from
+     * different sequences or rhs has a larger pos, this function returns false.
+     *
+     * @param rhs the site this one is compared to
+     * @return if this site is larger than or equal to rhs based on the partial order on the set of sites
+     */
+     bool operator>=(const Site& rhs) const;
+
+    /**
+     * @brief Operator to decide if the current site is larger than the one it is compared to.
+     *
+     * This comparison is based on the partial order of the set of sites. This method returns true if and only if both
+     * sites belong to the same sequence and the current site's pos is larger than rhs's. If they are from
+     * different sequences or rhs has a larger pos, this function returns false.
+     *
+     * @param rhs the site this one is compared to
+     * @return if this site is larger than rhs based on the partial order on the set of sites
+     */
+    bool operator>(const Site& rhs) const;
+
+
+    /**
+     * @brief Operator to decide if the current site is smaller than the one it is compared to.
+     *
+     * This comparison is based on the partial order of the set of sites. This method returns true if and only if both
+     * sites belong to the same sequence and the current site's pos is smaller than rhs's. If they are from
+     * different sequences or rhs has a smaller pos, this function returns false.
+     *
+     * @param rhs the site this one is compared to
      * @return if this site is smaller than rhs based on the partial order on the set of sites
      */
-     bool operator <=(const Site& rhs) const;
+    bool operator<(const Site& rhs) const;
 };
 
 #endif //MC_DIALIGN_SITE_H
